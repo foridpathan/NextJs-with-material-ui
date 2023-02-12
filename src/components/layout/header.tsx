@@ -40,22 +40,24 @@ export default function Header() {
     <Box sx={{ flexGrow: 1 }}>
       <AppBar position="static" color="default">
         <Toolbar>
+          {/* LOGO */}
           <Typography variant="h6" noWrap component="div">
             LOGO
           </Typography>
+          {/* SEARCH BOX COMPONENT */}
           <Box
             sx={{ flexGrow: 1 }}
             alignContent={"center"}
             display={"flex"}
             justifyContent="center">
-            <div>
-              <SearchForm />
-            </div>
+            <SearchForm />
           </Box>
+          {/* VISIBLE ONLY DESKTOP DEVICE */}
           <Box sx={{ display: { xs: "none", md: "flex" } }}>
             <MenuItem>Notification</MenuItem>
             <MenuItem>Profile</MenuItem>
           </Box>
+          {/* SHOW ONLY MOBILE DEVICE */}
           <Box sx={{ display: { xs: "flex", md: "none" } }}>
             {renderMobileMenu}
           </Box>

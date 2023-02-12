@@ -14,9 +14,11 @@ import RemoveIcon from "@mui/icons-material/Remove";
 export default function Home() {
   return (
     <>
+      {/* MAP COMPONENT */}
       <Box height={450} overflow="hidden">
         <MapBoxWrapper />
       </Box>
+      {/* START SECTION */}
       <Box marginTop={3} padding={1} bgcolor={"GrayText"} color="white">
         <Grid container spacing={2} alignItems="center">
           <Grid item xs={8} alignItems="center" display={"flex"} spacing={3}>
@@ -30,6 +32,8 @@ export default function Home() {
           </Grid>
         </Grid>
       </Box>
+      {/* EMD */}
+      {/* START SECTION */}
       <Box marginTop={3}>
         <Grid container spacing={2}>
           <Grid item xs={6.5}>
@@ -108,6 +112,8 @@ export default function Home() {
           </Grid>
         </Grid>
       </Box>
+      {/* END */}
+      {/* START SECTION */}
       <Box marginTop={3} mb={2}>
         <Grid container direction="row" alignItems="stretch" spacing={2}>
           <Grid item xs={6.5}>
@@ -198,6 +204,7 @@ export default function Home() {
           </Grid>
         </Grid>
       </Box>
+      {/* END */}
     </>
   );
 }

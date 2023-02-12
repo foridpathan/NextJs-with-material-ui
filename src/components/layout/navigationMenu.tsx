@@ -1,8 +1,6 @@
 import { AppBar, Button, Menu, MenuItem, Toolbar } from "@mui/material";
 import React from "react";
 
-const ITEM_HEIGHT = 48;
-
 const NavigationMenu = () => {
   const [anchorEl, setAnchorEl] = React.useState<null | HTMLElement>(null);
 

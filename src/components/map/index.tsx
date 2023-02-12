@@ -6,6 +6,7 @@ import MAP_STYLE from "./map-style";
 
 import type { MapboxStyle, MapRef, MapLayerMouseEvent } from "react-map-gl";
 
+// API TOKEN
 const TOKEN =
   "pk.eyJ1Ijoia2t1cnR6IiwiYSI6ImNrOWE4djN1eDAyd3UzZXBuYzF1OWtjYTQifQ.obmfLm5bA5yqrac86Fw8GQ";
 
@@ -29,19 +30,17 @@ export default function MapBoxWrapper() {
   };
 
   return (
-    <>
-      <Map
-        ref={mapRef}
-        initialViewState={{
-          longitude: -99.6111874,
-          latitude: 39.0972451,
-          zoom: 4,
-        }}
-        mapStyle={MAP_STYLE as MapboxStyle}
-        interactiveLayerIds={["sf-neighborhoods-fill"]}
-        onClick={onClick}
-        mapboxAccessToken={TOKEN}
-      />
-    </>
+    <Map
+      ref={mapRef}
+      initialViewState={{
+        longitude: -99.6111874, // initial longitude
+        latitude: 39.0972451, // initial latitude
+        zoom: 4, // Default zoom
+      }}
+      mapStyle={MAP_STYLE as MapboxStyle}
+      interactiveLayerIds={["sf-neighborhoods-fill"]}
+      onClick={onClick}
+      mapboxAccessToken={TOKEN}
+    />
   );
 }
