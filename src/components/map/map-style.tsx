@@ -1,6 +1,6 @@
 import type { GeoJSONSourceRaw, FillLayer, LineLayer } from "react-map-gl";
 
-import MAP_STYLE from "./map-style-basic-v8.json";
+import MAP_STYLE from "./map-style.json";
 
 const sfNeighborhoods: GeoJSONSourceRaw = {
   type: "geojson",

@@ -24,11 +24,7 @@ export default class MyDocument extends Document {
   }
 }
 
-// `getInitialProps` belongs to `_document` (instead of `_app`),
-// it's compatible with static-site generation (SSG).
 MyDocument.getInitialProps = async (ctx) => {
-  // Resolution order
-
   const originalRenderPage = ctx.renderPage;
 
   // You can consider sharing the same Emotion cache between all the SSR requests to speed up performance.
